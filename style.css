@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color-1: hsl(225, 100%, 94%);
+  --primary-color-2: hsl(245, 75%, 52%);
+  --secondary-color-1: hsl(225, 100%, 98%);
+  --secondary-color-2: hsl(224, 23%, 55%);
+  --secondary-color-3: hsl(223, 47%, 23%);
+  --primary-font: "Red Hat Display", sans-serif;
+  --paragraph-font-size: 16px;
+  --heading-font-size: 32px;
+  --font-weight-1: 500;
+  --font-weight-2: 700;
+  --font-weight-3: 900;
+  --desktop-width: 1440px;
+  --mobile-width: 375px;
+  --font-size-1: 18px;
+  --font-size-2: 15px;
+}
+
+body {
+  background-color: var(--primary-color-1);
+  background: url(./assets/pattern-background-desktop.svg);
+  font-family: var(--primary-font);
+}
+
+.main-container {
+  background-color: var(--secondary-color-1);
+  width: 450px;
+  height: 500px;
+  margin: auto;
+  margin-top: 50px;
+  border: none;
+  border-radius: 20px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.info {
+}
+
+h1 {
+  font-size: var(--heading-font-size);
+  color: var(--secondary-color-3);
+  justify-content: center;
+  display: flex;
+}
+
+p {
+  font-family: var(--primary-font);
+  color: var(--secondary-color-2);
+  font-size: 15px;
+  text-align: center;
+}
+.prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: var(--secondary-color-3);
+  font-size: var(--font-size-1);
+  top: 315px;
+}
+span {
+  color: var(--secondary-color-2);
+  font-size: var(--font-size-2);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color-2);
+  font-size: var(--font-size-1);
+}
+
+.icon {
+  height: 35px;
+  width: 35px;
+}
+
+.btn {
+  font-size: var(--font-size-1);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 0;
+  margin: 5px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.buttons-container {
+  display: grid;
+}
+.btn.proceed {
+  background-color: var(--primary-color-2);
+  color: var(--secondary-color-1);
+}
+.btn.cancel {
+  background-color: var(--primary-color-1);
+  color: var(--secondary-color-2);
+}
+
+.hero-img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.btn:hover {
+  font-size: 20px;
+  transition: 0.5s;
+  background-color: var(--secondary-color-3);
+}
